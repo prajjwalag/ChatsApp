@@ -11,14 +11,14 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mobile_auth" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/phoneLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -39,9 +39,9 @@
         android:gravity="center"
         android:text="Message will be send to this number to verify phone number"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/phoneLabel"
+        app:layout_constraintStart_toStartOf="@+id/phoneLabel"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -67,8 +67,8 @@
                 android:background="@drawable/textbox_outline"
                 android:ems="10"
                 android:hint="Type Your Phone Number"
-                android:inputType="textPersonName"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:phoneNumber="true" />
 
             <Button
                 android:id="@+id/continueBtn"

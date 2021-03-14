@@ -18,11 +18,11 @@
         app:srcCompat="@drawable/otp_verify" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/phoneLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Verify +91748384832"
+        android:text="Verify Phone Number"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -39,9 +39,9 @@
         android:gravity="center"
         android:text="Enter the OTP code to verify your pone number"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/phoneLabel"
+        app:layout_constraintStart_toStartOf="@+id/phoneLabel"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:layout_marginTop="5dp"
                 android:inputType="number"
                 android:itemBackground="@color/grey"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 app:OtpItemCount="6"
                 app:OtpLineColor="@color/green"
                 app:OtpViewType="line"
